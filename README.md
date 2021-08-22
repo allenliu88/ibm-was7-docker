@@ -8,11 +8,21 @@ IBM's official [Docker build](https://github.com/WASdev/ci.docker.websphere-trad
 
 You have to download WebSphere Application Server v7.0 installation package and updates from IBM as following.
 
+**最好通过迅雷下载。**
+
+下载地址参考：https://www.ibm.com/support/pages/security-bulletin-ibm-intelligent-operations-center-15-websphere-application-server-oracle-java-cpu-april-2013
+其中描述了相关补丁的FTP下载地址。更改相关版本即可。
+
 ### Download installation files into `source` folder
 
 1. Download `was.7000.wasdev.nocharge.linux.amd64.tar.gz` form [IBM WebSphere Application for Developers](https://www-01.ibm.com/marketing/iwm/iwm/web/dispatcher.do?source=swg-wsasfd) page (link from this [StackOverflow answer](https://stackoverflow.com/a/17523649/3440376)), and place into `source` folder.
 
+**已存储至百度网盘。**
+
 2. Download IBM Update Installer for WebSphere Software for Linux form [IBM web site](http://www-01.ibm.com/support/docview.wss?rs=180&uid=swg24020212) (IBMid required), or direct download from [IBM's FTP](ftp://public.dhe.ibm.com/software/websphere/appserv/support/tools/UpdateInstaller/7.0.x/LinuxAMD64/). Place the download file `7.0.0.*-WS-UPDI-LinuxAMD64.tar.gz` into `source` folder.
+
+此处下载：ftp://public.dhe.ibm.com/software/websphere/appserv/support/tools/UpdateInstaller/7.0.x/LinuxAMD64/7.0.0.21-WS-UPDI-LinuxAMD64.tar.gz
+如需下载其他版本，例如，29版本，则直接将`tar.gz`文件名称中的21改为29即可。
 
 ### Download updates into `udpate` folder
 
@@ -20,8 +30,11 @@ Choose desired fix pick version and download from [IBM web site](http://www-01.i
 
 Take Fix Pack 21 for example, the direct download location is:
 
-- <ftp://public.dhe.ibm.com/software/websphere/appserv/support/fixpacks/was70/cumulative/cf70021/LinuxX64/7.0.0-WS-WAS-LinuxX64-FP0000021.pak>
-- <ftp://public.dhe.ibm.com/software/websphere/appserv/support/fixpacks/was70/cumulative/cf70021/LinuxX64/7.0.0-WS-WASSDK-LinuxX64-FP0000021.pak>
+- 此处下载：ftp://public.dhe.ibm.com/software/websphere/appserv/support/fixpacks/was70/cumulative/cf70021/LinuxX64/7.0.0-WS-WAS-LinuxX64-FP0000021.pak
+- 此处下载：ftp://public.dhe.ibm.com/software/websphere/appserv/support/fixpacks/was70/cumulative/cf70021/LinuxX64/7.0.0-WS-WASSDK-LinuxX64-FP0000021.pak
+- WASSDK下载的备用地址：http://delivery04.dhe.ibm.com/sar/CMA/WSA/03tha/0/7.0.0-WS-WASSDK-LinuxX64-FP0000029.pak
+
+如需下载其他版本，例如，29版本，则直接将`tar.gz`文件名称中的21改为29即可。
 
 ### Resulting directory structure
 
