@@ -4,6 +4,13 @@ Building an IBM WebSphere Application Server 7.0 for Developers image.
 
 IBM's official [Docker build](https://github.com/WASdev/ci.docker.websphere-traditional) only supports WebSphere Application Server 8.5.5+. However, sometimes you can't really get rid off something for a while.
 
+## Built image
+
+我已经打好了镜像，可通过如下途径直接获取使用：
+```sh
+docker pull allen88/ibm-was:7.0.0
+```
+
 ## Prerequisites
 
 You have to download WebSphere Application Server v7.0 installation package and updates from IBM as following.
@@ -32,7 +39,7 @@ Take Fix Pack 21 for example, the direct download location is:
 
 - 此处下载：ftp://public.dhe.ibm.com/software/websphere/appserv/support/fixpacks/was70/cumulative/cf70021/LinuxX64/7.0.0-WS-WAS-LinuxX64-FP0000021.pak
 - 此处下载：ftp://public.dhe.ibm.com/software/websphere/appserv/support/fixpacks/was70/cumulative/cf70021/LinuxX64/7.0.0-WS-WASSDK-LinuxX64-FP0000021.pak
-- WASSDK下载的备用地址：http://delivery04.dhe.ibm.com/sar/CMA/WSA/03tha/0/7.0.0-WS-WASSDK-LinuxX64-FP0000029.pak
+- WASSDK下载的备用地址：http://delivery04.dhe.ibm.com/sar/CMA/WSA/03tha/0/7.0.0-WS-WASSDK-LinuxX64-FP0000021.pak
 
 如需下载其他版本，例如，29版本，则直接将`tar.gz`文件名称中的21改为29即可。
 
